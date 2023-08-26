@@ -40,9 +40,9 @@
 ## Methods
 ### Automatic segmentation
 
-![Fig 1.](resources/fig1.png)
+![Fig 1.](Resources/fig1.png)
 
-![Fig 2.](resources/fig2.png)
+![Fig 2.](Resources/fig2.png)
   
 1. Preprocessing
     - Image size varied significantly
