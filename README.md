@@ -37,7 +37,7 @@
 - Protons create a signal that is processed to form an image of the body in terms of the density of protons in a specific region. 
 - The signal from a proton is different depending on its environment
   
-## Methods
+## Method Summary
 ### Automatic segmentation
 
 ![Fig 1.](Resources/fig1.png)
@@ -45,8 +45,8 @@
 ![Fig 2.](Resources/fig2.png)
   
 1. Preprocessing
-    - Image size varied significantly
-    - So images scaled into common frame of reference
+    - Rescale images to have spacial dimensions 256x256
+    - Apply contrast normalisation
     - Skull Stripping - deep learning algorithm 
     - Normalise intensities of tissues between cases - histogram
     - Z-score normalisation of entire data set
@@ -66,8 +66,6 @@
 - Apply Bonferroni correction to account for multiple hypothesis testing
 - Evaluate the performance of the deep learning based segmentation using the [Dice similarity coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) to measure the overlap bewteen the segmentation provided by the algorithm and the manually annotated data.
 - Apply cross validation - test/train on multiple combinations of cases
-
-
 
 ## Glossary
 - IDH Mutation
